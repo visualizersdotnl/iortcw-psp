@@ -1,7 +1,25 @@
  ![iortcw logo](https://raw.githubusercontent.com/iortcw/iortcw/master/MP/misc/wolf128.png)                       
                                
 
-## iortcw
+## iortcw-psp -- Sony PSP-1000 (32MB) port (WIP) of 'Return to castle Wolfenstein' (single player)
+
+It is my intention to port the single player portion of this iconic title to Sony PSP, because:
+- Working a Wolfenstein has been on my developer bucket list and in the industry itself I haven't been granted this opportunity (yet).
+- I like porting (started my career at Nixxes Software after all).
+- I immensely enjoyed playing this game when it came out.
+- I think I have a shot at it with the right trimming and optimization as it also ran on the PlayStation 2.
+
+My strategy (see issue list for details) in short:
+- Sandblast a Linux and/or OSX builds back to such a footprint that it becomes practically feasible for PSP (max. 24MB RAM).
+- This includes possible/likely tooling to reduce assets.
+- At that point further strip the build of *any* dependencies unnecessary for basic stock playthrough.
+- Branch off and create a skeleton (read: main loop runs) PSP build from there (most dependencies seem covered/workable).
+- Slowly get all subsystems back up, which will no doubt expose a plethora of necessary optimizations and such.
+
+Hit me up if you want to be part of this, otherwise sit back and enjoy the ride; I intend to see this throough.
+
+
+ORIGINAL (forked) README FOLLOWS
 
 The intent of this project is to provide a baseline RTCW which may be used
 for further development and fun. 
