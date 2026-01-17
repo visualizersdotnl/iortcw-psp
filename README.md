@@ -10,7 +10,7 @@ It is my intention to port the single player portion of this iconic title to Son
 - I think I have a shot at it with the right trimming and optimization as it also ran on the PlayStation 2.
 
 My strategy (see issue list for details) in short:
-- Sandblast a Linux and/or OSX builds back to such a footprint that it becomes practically feasible for PSP (max. 24MB RAM).
+- Sandblast Linux/OSX build(s) back to such a footprint that it becomes practically feasible for PSP (max. 24MB RAM).
 - This includes possible/likely tooling to reduce assets.
 - At that point further strip the build of *any* dependencies unnecessary for basic stock playthrough.
 - Lastly fix the most glaring screen aspect ratio inconsistencies before going PSP.
