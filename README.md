@@ -17,7 +17,8 @@ My strategy (see issue list for details) in short:
 - Branch off and create a skeleton (read: main loop runs) PSP build from there (most dependencies seem covered/workable).
 - Slowly get all subsystems back up, which will no doubt expose a plethora of necessary optimizations and such.
 
-Since debugging / iteration on PSP is more cumbersome I can use the OSX/Linux branch to implement and test fixes as well as improvements that aren't purely platform-specific.
+Since debugging / iteration on PSP is more cumbersome I can use the OSX/Linux branch to implement and test fixes as well as improvements that aren't purely platform-specific. That doesn't mean using a PSP emulator is off the table, in fact I intend to use that alongside the actual hardware quite a bit.
+
 Hit me up if you want to be part of this, otherwise sit back and enjoy the ride; I intend to see this through.
 
 
