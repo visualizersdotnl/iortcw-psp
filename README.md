@@ -13,13 +13,15 @@ My strategy (see issue list for details) in short:
 - Sandblast a Linux and/or OSX builds back to such a footprint that it becomes practically feasible for PSP (max. 24MB RAM).
 - This includes possible/likely tooling to reduce assets.
 - At that point further strip the build of *any* dependencies unnecessary for basic stock playthrough.
+- Lastly fix the most glaring screen aspect ratio inconsistencies before going PSP.
 - Branch off and create a skeleton (read: main loop runs) PSP build from there (most dependencies seem covered/workable).
 - Slowly get all subsystems back up, which will no doubt expose a plethora of necessary optimizations and such.
 
-Hit me up if you want to be part of this, otherwise sit back and enjoy the ride; I intend to see this throough.
+Since debugging / iteration on PSP is more cumbersome I can use the OSX/Linux branch to implement and test fixes as well as improvements that aren't purely platform-specific.
+Hit me up if you want to be part of this, otherwise sit back and enjoy the ride; I intend to see this through.
 
 
-ORIGINAL (forked) README FOLLOWS
+-- ORIGINAL (forked) README FOLLOWS
 
 The intent of this project is to provide a baseline RTCW which may be used
 for further development and fun. 
