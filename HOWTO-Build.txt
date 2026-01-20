@@ -93,20 +93,19 @@ Output files will be in the 'build' folder.
 
 First make sure you've got all regular development tools installed (Xcode and the standard terminal fare like homebrew).
 
-To build universal binary, please run:
-./make-macosx-ub.sh 
-
-For PPC XCode 3 & OSX 10.6 (ideally) is required.
-
-To build for specificy architecture:
-./make-macosx.sh (x86, x86_64, ppc, arm64)
-
-All output (executables and intermediates) will be in the 'build' folder.
-
 Necessary dependencies (information taken from https://github.com/iortcw/iortcw/pull/116):
 - Have SDL2.framework installed in /Library/Framework, and via homebrew please install:
   + openal-soft
   + opus
   + opusfile
+
+For PPC XCode 3 & OSX 10.6 (ideally) is required.
+
+To build, go to the respective iortcw/SP or iortcw/MP folder.
+
+- To build universal binary: ./make-macosx-ub.sh 
+- To build for specific/local architecture: ./make-macosx.sh (x86, x86_64, ppc, arm64)
+
+Output files will be in the 'build' folder.
 
 *If* you run into any trouble with .dylibs, make sure the ones you use are for the appropriate architecture.
