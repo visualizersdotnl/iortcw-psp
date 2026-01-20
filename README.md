@@ -8,9 +8,11 @@ It is my intention to port the single player portion of this iconic title to Son
 - I like porting (started my career at Nixxes Software after all).
 - I immensely enjoyed playing this game when it came out.
 - I think I have a shot at it with the right trimming and optimization as it also ran on the PlayStation 2.
+- A port of Quake III Arena exists, though I do not know how well it runs and I *do* know RTCW is more demanding.
 
 My strategy (see issue list for details) in short:
-- Sandblast Linux/OSX build(s) back to such a footprint that it becomes practically feasible for PSP (max. 24MB RAM).
+- Sandblast Linux/OSX build(s) back to such a footprint that it becomes practically feasible for PSP (max. ~25-26MB RAM for a shippable title, 2MB VRAM).
+  + The 2MB VRAM should be possible given that I can get away with smaller buffers and textures as opposed to the PlayStation 2.
 - This includes possible/likely tooling to reduce assets.
 - At that point further strip the build of *any* dependencies unnecessary for basic stock playthrough.
 - Lastly fix the most glaring screen aspect ratio inconsistencies before going PSP.
