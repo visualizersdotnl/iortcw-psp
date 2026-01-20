@@ -89,28 +89,24 @@ Output files will be in the 'build' folder.
 (So for a default Cygwin install the path would be: C:\Cygwin\home\Your_Username\iortcw\<game>\build\release-mingw32-<arch>)
 
 
-***Compiling under Mac***: (Universal binary)...Requires XCode3 to build PPC support, ideally under OSX 10.6.
-Use the provided script:
-./make-macosx-ub.sh
+***Compiling for Mac***: 
 
+First make sure you've got all regular development tools installed (Xcode and the standard terminal fare like homebrew).
 
-**Compiling for Mac***: (Terminal based apps)
+To build universal binary, please run:
+./make-macosx-ub.sh 
 
-First make sure you've got all regular development tools installed (Xcode and the standard terminal fare).
+For PPC XCode 3 & OSX 10.6 (ideally) is required.
 
-Then, run:
+To build for specificy architecture:
 ./make-macosx.sh (x86, x86_64, ppc, arm64)
 
+All output (executables and intermediates) will be in the 'build' folder.
+
 Necessary dependencies (information taken from https://github.com/iortcw/iortcw/pull/116):
-- Have SDL2.framework installed in /Library/Framework, and via homebrew:
+- Have SDL2.framework installed in /Library/Framework, and via homebrew please install:
   + openal-soft
   + opus
   + opusfile
 
-If you run into any troubles with .dylibs, make sure the ones you use are for the appropriate architecture.
-
-The other scripts (make-macosx-app.sh and make-macosx-ub.sh) can be used to respectively,
-... build a full OSX .app, and
-... build a Universal Binary.
-
-In all cases, output binaries will be located in the 'build' folder.
+*If* you run into any trouble with .dylibs, make sure the ones you use are for the appropriate architecture.
