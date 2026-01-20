@@ -1,6 +1,6 @@
 
 
-***Compiling under Linux (and other *NIX)***: Requires SDL2 development packages...Check with your disto
+***Compiling under Linux (and other *NIX)***: Requires SDL2 development packages...Check with your distro
 
 Type:
 make
@@ -94,13 +94,23 @@ Use the provided script:
 ./make-macosx-ub.sh
 
 
-**Compiling under Mac***: (Terminal based apps)
-Use the appropriate build script based on the XCode version installed.
+**Compiling for Mac***: (Terminal based apps)
 
-./make-macosx_xcode3.sh <arch> (x86, x86_64, ppc)
-./make-macosx_xcode4.sh <arch> (x86, x86_64)
-./make-macosx_xcode5.sh <arch> (x86, x86_64)
+First make sure you've got all regular development tools installed (Xcode and the standard terminal fare).
 
+Then, run:
+./make-macosx.sh (x86, x86_64, ppc, arm64)
+
+Necessary dependencies (information taken from https://github.com/iortcw/iortcw/pull/116):
+- Have SDL2.framework installed in /Library/Framework, and via homebrew:
+  + openal-soft
+  + opus
+  + opusfile
+
+If you run into any troubles with .dylibs, make sure the ones you use are for the appropriate architecture.
+
+The other scripts (make-macosx-app.sh and make-macosx-ub.sh) can be used to respectively,
+... build a full OSX .app, and
+... build a Universal Binary.
 
 In all cases, output binaries will be located in the 'build' folder.
-
