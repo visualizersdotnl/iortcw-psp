@@ -1,4 +1,4 @@
- ![iortcw logo](https://raw.githubusercontent.com/iortcw/iortcw/master/MP/misc/wolf128.png)                       
+ ![iortcw logo](https://github.com/visualizersdotnl/iortcw-psp/blob/master/psp-vanity.png?raw=true)                       
                                
 
 ## iortcw-psp -- Sony PSP-1000 (32MB) port (WIP) of 'Return to castle Wolfenstein' (single player)
